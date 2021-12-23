@@ -13,7 +13,12 @@
 <body>
     <header class="header">
         <div class="wrapper header__wrapper">
-            <a href="#" class="logo"><img src="./img/logo.png" alt="Productly LCC"></a>
+            <!-- <a href="#" class="logo"><img src="./img/logo.png" alt="Productly LCC"></a> -->
+            <a href="#" class="logo">
+                <object type="image/svg+xml" data="./img/logo.svg" class="logo-object">
+                    Your browser does not support SVG
+                </object>
+            </a>
             <nav class="header__navigation">
                 <ul class="navigation">
                     <li class="navigation__link">Home</li>
@@ -32,8 +37,8 @@
         <section class="promo">
             <div class="wrapper promo__wrapper">
                 <div class="promo__content">
-                    <h1>The Design Thinking superpowers</h1>
-                    <p>Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
+                    <h1 class="promo__title">The Design Thinking superpowers</h1>
+                    <p class="promo__text">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
                     <div class="promo__buttons">
                         <button class="button button_colored">Get started</button>
                         <a href="#" class="link-button">
@@ -51,7 +56,9 @@
                 <div class="layout-4-column">
                     <div class="tool">
                         <div class="tool__icon">
-                            <span class="icon-square icon-sqaure_lilium"></span>
+                            <span class="icon-square icon-sqaure_lilium">
+                                <span class="ico ico-arrow"></span>
+                            </span>
                         </div>
                         <h4>First click tests</h4>
                         <p>While most people enjoy casino gambling</p>
