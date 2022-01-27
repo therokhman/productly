@@ -7,7 +7,7 @@
     line-height: 2.2rem;
     border-radius: 4px;
     cursor: pointer;
-    transition: all .3s;
+    @extend %transition;
     &_bordered {
         background: $color-light;
         border: 1px solid $color-border;
@@ -31,7 +31,15 @@
 .link-button {
     color: $color-primary;
     @extend %font-add;
-    @include font($size: 1.6rem, $height: 2.4rem, $weight: 600);
+    display: inline-flex;
+    align-items: center;
+    transition: .3s;
+    &:hover {
+        color: $color-red;
+        .ico_play {
+            background-image: url(../../img/icons/play-hover.svg);
+        }
+    }
 }
 
 .link-button__text {
